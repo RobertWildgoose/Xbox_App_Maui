@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Xbox_App.Views.Pages.DashboardPage"
+    Title=""
+    xmlns:micro="http://schemas.mauimicromvvm.com/2022/dotnet/maui"
+    micro:MauiMicro.Autowire="True">
+    <ScrollView
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            Orientation="Vertical">
+        <ScrollView.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#595a5c" Offset="0.1" />
+                <GradientStop Color="Black" Offset="1.0" />
+            </LinearGradientBrush>
+        </ScrollView.Background>
+        <VerticalStackLayout>
+            <Grid ColumnDefinitions="50,*,50,50">
+                <ImageButton BackgroundColor="Blue" HeightRequest="50" Grid.Column="0"/>
+                <ImageButton BackgroundColor="Blue" HeightRequest="50" Grid.Column="2"/>
+                <ImageButton BackgroundColor="Blue" HeightRequest="50" Grid.Column="3"/>
+            </Grid>
+            <VerticalStackLayout
+                    BindableLayout.ItemsSource="{Binding DashboardTiles}"
+                    HorizontalOptions="FillAndExpand">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <Label TextColor="White" IsVisible="{Binding ShowTitle}" Margin="16" FontSize="Medium" Text="{Binding Title}"/>
+                            <ScrollView Orientation="Horizontal">
+                                <HorizontalStackLayout
+                                        BindableLayout.ItemsSource="{Binding Tiles}"
+                                        HorizontalOptions="FillAndExpand"
+                                        HeightRequest="{Binding HeightRequest}">
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate>
+                                            <VerticalStackLayout>
+                                                <Border 
+                                                    BackgroundColor="Transparent"
+                                                    Margin="{Binding MarginRequest}"
+                                                    StrokeShape="RoundRectangle 10,10,10,10"
+                                                    HeightRequest="{Binding HeightRequest}"
+                                                    WidthRequest="{Binding WidthRequest}">
+                                                    <Image
+                                                        Aspect="AspectFill"
+                                                        Source="{Binding ImageUrl}"
+                                                        BackgroundColor="Grey"
+                                                        HeightRequest="{Binding HeightRequest}"
+                                                        WidthRequest="{Binding WidthRequest}"/>
+                                                </Border>
+                                                
+                                            </VerticalStackLayout>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </HorizontalStackLayout>
+                            </ScrollView>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

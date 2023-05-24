@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Xbox_App.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Xbox_App.Views.Pages"
+    Shell.FlyoutBehavior="Disabled">
+    <TabBar>
+        <Tab
+            Title="Dashboard">
+            <ShellContent
+                Title="Dashboard"
+                ContentTemplate="{DataTemplate local:DashboardPage}"
+                Route="Dashboard" />
+        </Tab>
+        <Tab
+            Title="Social">
+            <ShellContent
+                Title="Social"
+                ContentTemplate="{DataTemplate local:SocialPage}"
+                Route="Social" />
+        </Tab>
+        <Tab
+            Title="Search">
+            <ShellContent
+                Title="Search"
+                ContentTemplate="{DataTemplate local:SearchPage}"
+                Route="Search" />
+        </Tab>
+        <Tab
+            Title="Library">
+            <ShellContent
+                Title="Library"
+                ContentTemplate="{DataTemplate local:LibraryPage}"
+                Route="Library" />
+        </Tab>
+        <Tab
+            Title="Account">
+            <ShellContent
+                Title="Account"
+                ContentTemplate="{DataTemplate local:AccountPage}"
+                Route="Account" />
+        </Tab>
+    </TabBar>
+</Shell>
