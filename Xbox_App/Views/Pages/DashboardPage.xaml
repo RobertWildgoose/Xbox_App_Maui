@@ -3,8 +3,9 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="Xbox_App.Views.Pages.DashboardPage"
-    Title=""
+    BackgroundColor="Black"
     xmlns:micro="http://schemas.mauimicromvvm.com/2022/dotnet/maui"
+    xmlns:tiles="clr-namespace:Xbox_App.Views.Controls.Tiles"
     micro:MauiMicro.Autowire="True">
     <ScrollView
             HorizontalOptions="FillAndExpand"
@@ -18,9 +19,11 @@
         </ScrollView.Background>
         <VerticalStackLayout>
             <Grid ColumnDefinitions="50,*,50,50">
-                <ImageButton BackgroundColor="Blue" HeightRequest="50" Grid.Column="0"/>
-                <ImageButton BackgroundColor="Blue" HeightRequest="50" Grid.Column="2"/>
-                <ImageButton BackgroundColor="Blue" HeightRequest="50" Grid.Column="3"/>
+                <ImageButton Source="icon.svg" HeightRequest="30" Margin="10" Grid.Column="0"/>
+                <ImageButton BackgroundColor="Transparent" Margin="10" HeightRequest="40" Grid.Column="2"/>
+                <Border BackgroundColor="Gray" Margin="10" HeightRequest="40" WidthRequest="40" Grid.Column="3" StrokeShape="RoundRectangle 15">
+                    <ImageButton Command="{Binding NotificationsCommand}" Source="icon_notifications.png" Margin="10" WidthRequest="20" HeightRequest="20"/>
+                </Border>
             </Grid>
             <VerticalStackLayout
                     BindableLayout.ItemsSource="{Binding DashboardTiles}"
@@ -29,28 +32,30 @@
                     <DataTemplate>
                         <VerticalStackLayout>
                             <Label TextColor="White" IsVisible="{Binding ShowTitle}" Margin="16" FontSize="Medium" Text="{Binding Title}"/>
-                            <ScrollView Orientation="Horizontal">
+                            <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                                 <HorizontalStackLayout
                                         BindableLayout.ItemsSource="{Binding Tiles}"
-                                        HorizontalOptions="FillAndExpand"
-                                        HeightRequest="{Binding HeightRequest}">
+                                        HorizontalOptions="FillAndExpand">
                                     <BindableLayout.ItemTemplate>
                                         <DataTemplate>
                                             <VerticalStackLayout>
-                                                <Border 
-                                                    BackgroundColor="Transparent"
-                                                    Margin="{Binding MarginRequest}"
-                                                    StrokeShape="RoundRectangle 10,10,10,10"
-                                                    HeightRequest="{Binding HeightRequest}"
-                                                    WidthRequest="{Binding WidthRequest}">
-                                                    <Image
-                                                        Aspect="AspectFill"
-                                                        Source="{Binding ImageUrl}"
-                                                        BackgroundColor="Grey"
-                                                        HeightRequest="{Binding HeightRequest}"
-                                                        WidthRequest="{Binding WidthRequest}"/>
-                                                </Border>
-                                                
+                                                <tiles:HeaderTile 
+                                                    Headline="{Binding Title}"
+                                                    Description="{Binding Description}"
+                                                    Image="{Binding ImageUrl}"
+                                                    IsVisible="{Binding IsHeaderTile}"/>
+                                                <tiles:GameClipTile 
+                                                    IsVisible="{Binding IsGameClipTile}"
+                                                    Headline="{Binding Title}"
+                                                    Image="{Binding ImageUrl}"/>
+                                                <tiles:ActiveFriendsTile 
+                                                    Headline="{Binding Title}"
+                                                    Description="{Binding Description}"
+                                                    Image="{Binding ImageUrl}"
+                                                    IsVisible="{Binding IsActiveFriendsTile}"/>
+                                                <tiles:StandardTile 
+                                                    IsVisible="{Binding IsStandardTile}"
+                                                    Image="{Binding ImageUrl}"/>
                                             </VerticalStackLayout>
                                         </DataTemplate>
                                     </BindableLayout.ItemTemplate>

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Xbox_App.Views.Pages.LibraryPage"
-             xmlns:micro="http://schemas.mauimicromvvm.com/2022/dotnet/maui"
-             micro:MauiMicro.Autowire="True"
+             x:Class="Xbox_App.Views.Pages.NotificationsPage"
              BackgroundColor="Black">
     <VerticalStackLayout>
         <Label 

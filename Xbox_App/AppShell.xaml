@@ -4,39 +4,53 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Xbox_App.Views.Pages"
-    Shell.FlyoutBehavior="Disabled">
+    Shell.FlyoutBehavior="Disabled"
+    Shell.TabBarBackgroundColor="Black"
+    Shell.TabBarTitleColor="White"
+    Shell.TabBarUnselectedColor="Gray"
+    BackgroundColor="Black">
     <TabBar>
         <Tab
-            Title="Dashboard">
+            Icon="icon_home.png"
+            Shell.NavBarIsVisible="False">
             <ShellContent
+                NavigationPage.HasNavigationBar="False"
                 Title="Dashboard"
                 ContentTemplate="{DataTemplate local:DashboardPage}"
                 Route="Dashboard" />
         </Tab>
         <Tab
-            Title="Social">
+            Icon="icon_users.png"
+            Shell.NavBarIsVisible="False">
             <ShellContent
+                NavigationPage.HasNavigationBar="False"
                 Title="Social"
                 ContentTemplate="{DataTemplate local:SocialPage}"
                 Route="Social" />
         </Tab>
         <Tab
-            Title="Search">
+            Icon="icon_search.png"
+            Shell.NavBarIsVisible="False">
             <ShellContent
+                NavigationPage.HasNavigationBar="False"
                 Title="Search"
                 ContentTemplate="{DataTemplate local:SearchPage}"
                 Route="Search" />
         </Tab>
         <Tab
-            Title="Library">
+            Icon="icon_library.png"
+            Shell.NavBarIsVisible="False">
             <ShellContent
+                NavigationPage.HasNavigationBar="False"
                 Title="Library"
                 ContentTemplate="{DataTemplate local:LibraryPage}"
                 Route="Library" />
         </Tab>
         <Tab
-            Title="Account">
+            Icon="icon_user.png"
+            Shell.NavBarIsVisible="False">
             <ShellContent
+                NavigationPage.HasNavigationBar="False"
                 Title="Account"
                 ContentTemplate="{DataTemplate local:AccountPage}"
                 Route="Account" />

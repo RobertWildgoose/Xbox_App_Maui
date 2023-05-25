@@ -49,15 +49,33 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\icon.svg" />
+	  <None Remove="Resources\Images\icon_home.png" />
+	  <None Remove="Resources\Images\icon_library.png" />
+	  <None Remove="Resources\Images\icon_notifications.png" />
+	  <None Remove="Resources\Images\icon_search.png" />
+	  <None Remove="Resources\Images\icon_user.png" />
+	  <None Remove="Resources\Images\icon_users.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="AvantiPoint.MauiMicroMvvm" Version="0.2.7" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Views\Controls\" />
-	</ItemGroup>
-
-	<ItemGroup>
+	  <MauiXaml Update="Views\Controls\Tiles\ActiveFriendsTile.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Controls\Tiles\GameClipTile.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Controls\Tiles\HeaderTile.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Controls\Tiles\StandardTile.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\AccountPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -65,6 +83,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\LibraryPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\NotificationsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\SearchPage.xaml">

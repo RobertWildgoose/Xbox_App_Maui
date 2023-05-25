@@ -11,6 +11,6 @@ namespace Xbox_App.Models
         public string Title { get; set; }
         public bool ShowTitle => !string.IsNullOrEmpty(Title);
         public List<DashboardTile> Tiles { get; set; }
-        public int HeightRequest => (Tiles.FirstOrDefault()?.HeightRequest ?? 0) + (Tiles.FirstOrDefault()?.MarginRequest ?? 0);
+        public int HeightRequest => (Tiles.FirstOrDefault()?.HeightRequest ?? 0) + 20;
     }
 }

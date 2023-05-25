@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xbox_App.Views.Controls.Tiles.ActiveFriendsTile">
+    <VerticalStackLayout>
+        <Border
+            Stroke="Transparent"
+            BackgroundColor="Transparent"
+            StrokeShape="RoundRectangle 40">
+            <Grid 
+                Margin="10"
+                HeightRequest="180"
+                BackgroundColor="#3d3d3b"
+                RowDefinitions="100,30,*">
+                <AbsoluteLayout
+                    HeightRequest="100"
+                    WidthRequest="100">
+                    <Border
+                        AbsoluteLayout.LayoutBounds="10,10"
+                        Stroke="Transparent"
+                        BackgroundColor="Transparent"
+                        StrokeShape="RoundRectangle 40">
+                        <Image 
+                            Source="{Binding Image}"
+                            HeightRequest="80"
+                            WidthRequest="80"
+                            BackgroundColor="Red"/>
+                    </Border>
+                    <Border
+                        AbsoluteLayout.LayoutBounds="70,70"
+                        HeightRequest="20"
+                        WidthRequest="20"
+                        Stroke="Transparent"
+                        BackgroundColor="Transparent"
+                        StrokeShape="RoundRectangle 10">
+                    <Image 
+                        HeightRequest="20"
+                        WidthRequest="20"
+                        BackgroundColor="Green"/>
+                    </Border>
+                </AbsoluteLayout>
+                <Label 
+                    Margin="5"
+                    TextColor="White"
+                    FontSize="13"
+                    Grid.Row="1"
+                    WidthRequest="80"
+                    Text="{Binding Headline}"
+                    HorizontalOptions="Center" />
+                <Label 
+                    TextColor="White"
+                    Grid.Row="2"
+                    WidthRequest="80"
+                    FontSize="11"
+                    Text="{Binding Description}"
+                    HorizontalOptions="Center" />
+            </Grid>
+        </Border>
+    </VerticalStackLayout>
+</ContentView>

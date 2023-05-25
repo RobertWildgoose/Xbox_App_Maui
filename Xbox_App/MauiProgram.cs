@@ -12,8 +12,8 @@ public static class MauiProgram
 	{
 		var builder = MauiApp.CreateBuilder();
 		builder
-		.UseMauiMicroMvvm<AppShell>()
-		.ConfigureFonts(fonts =>
+        .UseMauiMicroMvvm<AppShell>("Resources/Styles/Colors.xaml", "Resources/Styles/Styles.xaml")
+        .ConfigureFonts(fonts =>
 		{
 			fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 			fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
@@ -24,8 +24,11 @@ public static class MauiProgram
         builder.Services.MapView<SearchPage, SearchPageViewModel>();
         builder.Services.MapView<LibraryPage, LibraryPageViewModel>();
         builder.Services.MapView<AccountPage, AccountPageViewModel>();
+        builder.Services.MapView<NotificationsPage, NotificationsPageViewModel>();
 
-		builder.Services.AddSingleton<IDashboardTileService, DashboardTileService>();
+        builder.Services.AddSingleton<IDashboardTileService, DashboardTileService>();
+
+		Routing.RegisterRoute("NotificationsPage", typeof(NotificationsPage));
 #if DEBUG
         builder.Logging.AddDebug();
 #endif

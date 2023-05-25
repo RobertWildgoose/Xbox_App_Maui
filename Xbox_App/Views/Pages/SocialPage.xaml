@@ -4,7 +4,8 @@
              x:Class="Xbox_App.Views.Pages.SocialPage"
              Title="SocialPage"
              xmlns:micro="http://schemas.mauimicromvvm.com/2022/dotnet/maui"
-             micro:MauiMicro.Autowire="True">
+             micro:MauiMicro.Autowire="True"
+             BackgroundColor="Black">
     <VerticalStackLayout>
         <Label 
             Text="Welcome to .NET MAUI!"

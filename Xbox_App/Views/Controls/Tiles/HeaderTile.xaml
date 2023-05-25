@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xbox_App.Views.Controls.Tiles.HeaderTile">
+    <VerticalStackLayout>
+        <VerticalStackLayout>
+            <Border 
+                BackgroundColor="Transparent"
+                Margin="10"
+                StrokeShape="RoundRectangle 10"
+                HeightRequest="270"
+                WidthRequest="270">
+                <AbsoluteLayout 
+                    Margin="20"
+                    HeightRequest="270"
+                    WidthRequest="270">
+                    <Image
+                        Aspect="AspectFill"
+                        Source="{Binding Image}"
+                        HeightRequest="270"
+                        WidthRequest="270"/>
+                    <Label 
+                        Text="{Binding Headline}"
+                        TextColor="Black"
+                        FontSize="24"
+                        WidthRequest="230"
+                        HeightRequest="60"
+                        AbsoluteLayout.LayoutBounds="10, 100" />
+                    <Label 
+                        Text="{Binding Description}"
+                        FontSize="12"
+                        TextColor="Black"
+                        WidthRequest="230"
+                        HeightRequest="60"
+                        AbsoluteLayout.LayoutBounds="10, 160" />
+                </AbsoluteLayout>
+            </Border>
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentView>
