@@ -15,10 +15,14 @@ In this stream, the basic app structure was created covering:
 
 |Expected|Currently|
 |--------|---------|
-|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023_expected.jpg?raw=true)|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_25-05-2023.png?raw=true)|
+|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023_expected.jpg?raw=true)|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023.png?raw=true)|
 
 # Stream Two (25/05/2023) - [Link](https://www.twitch.tv/videos/1829067525)
 In this stream, the basic app structure was created covering:
 - Dashboard Tiles Look and Feel
 - Command To Link To Notifications Page 
 - Tabbar Images
+
+|Expected|Currently|
+|--------|---------|
+|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023_expected.jpg?raw=true)|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_25-05-2023.png?raw=true)|
