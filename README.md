@@ -4,7 +4,7 @@ A Clone of the Xbox App [Built On Stream]
 # This is an on stream built Maui app clone of the [Xbox](https://play.google.com/store/search?q=xbox&c=apps) app.
 ## Each stream this page gets updated with how far the app has gone with screenshots to match.
 
-# Stream One (24/05/2023)
+# Stream One (24/05/2023) - [Link](https://www.twitch.tv/videos/1829067525)
 In this stream, the basic app structure was created covering:
 - Folder Structure
 - Views 
@@ -15,4 +15,10 @@ In this stream, the basic app structure was created covering:
 
 |Expected|Currently|
 |--------|---------|
-|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023_expected.jpg?raw=true)|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023.png?raw=true)|
+|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023_expected.jpg?raw=true)|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_25-05-2023.png?raw=true)|
+
+# Stream Two (25/05/2023) - [Link](https://www.twitch.tv/videos/1829067525)
+In this stream, the basic app structure was created covering:
+- Dashboard Tiles Look and Feel
+- Command To Link To Notifications Page 
+- Tabbar Images
