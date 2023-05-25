@@ -13,4 +13,6 @@ In this stream, the basic app structure was created covering:
 - Tabbar
 - Dashboard Tiles Implementation
 
-![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023.png?raw=true)
+|Expected|Currently|
+|--------|---------|
+|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023_expected.jpg?raw=true)|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023.png?raw=true)|
