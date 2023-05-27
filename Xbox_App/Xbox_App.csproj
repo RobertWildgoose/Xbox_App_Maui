@@ -50,10 +50,12 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\icon.svg" />
+	  <None Remove="Resources\Images\icon_chevron_left.png" />
 	  <None Remove="Resources\Images\icon_home.png" />
 	  <None Remove="Resources\Images\icon_library.png" />
 	  <None Remove="Resources\Images\icon_notifications.png" />
 	  <None Remove="Resources\Images\icon_search.png" />
+	  <None Remove="Resources\Images\icon_upload.png" />
 	  <None Remove="Resources\Images\icon_user.png" />
 	  <None Remove="Resources\Images\icon_users.png" />
 	</ItemGroup>
@@ -64,6 +66,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\Controls\Notifications\NotificationControl.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Controls\Tiles\ActiveFriendsTile.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -86,6 +91,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\NotificationsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\ScreenshotsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\SearchPage.xaml">

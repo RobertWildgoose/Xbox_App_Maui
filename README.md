@@ -18,11 +18,21 @@ In this stream, the basic app structure was created covering:
 |![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023_expected.jpg?raw=true)|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023.png?raw=true)|
 
 # Stream Two (25/05/2023) - [Link](https://www.twitch.tv/videos/1829067525)
-In this stream, the basic app structure was created covering:
+In this stream, the basic dashboard UI was added as well as the move to the notifications page:
 - Dashboard Tiles Look and Feel
 - Command To Link To Notifications Page 
 - Tabbar Images
 
 |Expected|Currently|
 |--------|---------|
-|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023_expected.jpg?raw=true)|![StreamOne](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_25-05-2023.png?raw=true)|
+|![StreamTwo](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_24-05-2023_expected.jpg?raw=true)|![StreamTwo](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_25-05-2023.png?raw=true)|
+
+# Stream Three (27/05/2023) - [Link](https://www.twitch.tv/videos/1830474228)
+In this stream, moved on to the notifications page setting up Dummy data and the conditional model that decides if its a friend or a screenshot:
+- Notifications UI
+- Command To Link To Notifications Page 
+- Notification Service
+
+|Expected|Currently|
+|--------|---------|
+|![StreamThree](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_27-05-2023_expected.jpg?raw=true)|![StreamThree](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_27-05-2023.png?raw=true)|

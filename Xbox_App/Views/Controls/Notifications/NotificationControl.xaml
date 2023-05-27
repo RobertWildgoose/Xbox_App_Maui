@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xbox_App.Views.Controls.Notifications.NotificationControl">
+    <VerticalStackLayout>
+        <Grid ColumnDefinitions="50,*,50" HeightRequest="60" Margin="10" >
+            <AbsoluteLayout
+                HeightRequest="50" 
+                WidthRequest="50"
+                Grid.Column="0">
+                <Border
+                    AbsoluteLayout.LayoutBounds="5, 5"
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    StrokeShape="RoundRectangle 15">
+                    <Image 
+                        Source="{Binding ImageUrl}"
+                        Aspect="AspectFill"
+                        HeightRequest="40" 
+                        WidthRequest="40"/>
+                </Border>
+                <Border
+                    BackgroundColor="Green"
+                    AbsoluteLayout.LayoutBounds="25, 25"
+                    WidthRequest="25"
+                    HeightRequest="25"
+                    StrokeShape="RoundRectangle 15">
+                    <Image 
+                        Aspect="AspectFill"
+                        Source="{Binding TypeImageUrl}"
+                        HeightRequest="15" 
+                        WidthRequest="15"/>
+                </Border>
+            </AbsoluteLayout>
+            <Label 
+                VerticalTextAlignment="Center" 
+                Margin="5" 
+                TextColor="White"
+                Padding="5"
+                HorizontalOptions="FillAndExpand" 
+                Text="{Binding Title}" 
+                Grid.Column="1"/>
+            <Label 
+                HorizontalTextAlignment="Center" 
+                VerticalTextAlignment="Center" 
+                Margin="5" 
+                TextColor="White" 
+                HorizontalOptions="FillAndExpand" 
+                Text="{Binding TimeStamp}" 
+                Grid.Column="2"/>
+        </Grid>
+    </VerticalStackLayout>
+</ContentView>
