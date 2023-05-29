@@ -1,103 +1,534 @@
-{
-"dashboardTileSets": [
-{
-"title": "",
-"tiles": [
-{
-"title": "Play Riot Games' mobile titles!",
-"description": "Receive in-game benefits by linking your Riot Games account to your Microsoft account.",
-"imageUrl": "https://images.ctfassets.net/vfkpgemp7ek3/1lqVpXAGDXmXIZT0jLgUls/f158d27e3452fa2e2b575b31533122e1/league-of-legends-wild-rift-500-million.jpeg",
-"isHeaderTile": true,
-"heightRequest": 250
-},
-{
-"title": "Fall Guys",
-"description": "Jump back in!",
-"imageUrl": "https://www.nme.com/wp-content/uploads/2022/08/Fall-Guys-x-Sonic.jpg",
-"isHeaderTile": true,
-"heightRequest": 250
-},
-{
-"title": "SpiderHeck",
-"description": "Get it with Xbox Game Pass",
-"imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1607/czGau6hOvx9iQYOOkACdxqDl.png",
-"isHeaderTile": true,
-"heightRequest": 250
-}
+[
+  {
+    "Title": "",
+    "ShowTitle": false,
+    "Tiles": [
+      {
+        "Title": "Play Riot Games' mobile titles!",
+        "Description": "Receive in-game benefits by linking your riot games account to your Microsoft account.",
+        "ImageUrl": "https://images.ctfassets.net/vfkpgemp7ek3/1lqVpXAGDXmXIZT0jLgUls/f158d27e3452fa2e2b575b31533122e1/league-of-legends-wild-rift-500-million.jpeg",
+        "IsHeaderTile": true,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 250
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.nme.com/wp-content/uploads/2022/08/Fall-Guys-x-Sonic.jpg",
+        "IsHeaderTile": true,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 250
+      },
+      {
+        "Title": "SpiderHeck",
+        "Description": "Get it with Xbox Game Pass",
+        "ImageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1607/czGau6hOvx9iQYOOkACdxqDl.png",
+        "IsHeaderTile": true,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 250
+      }
+    ],
+    "HeightRequest": 270
+  },
+  {
+    "Title": "Official posts from games",
+    "ShowTitle": true,
+    "Tiles": [
+      {
+        "Title": "Warzone",
+        "Description": null,
+        "ImageUrl": "https://assetsio.reedpopcdn.com/warzone-2-mw2-season-3-header-size.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": true,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Skyrim",
+        "Description": null,
+        "ImageUrl": "https://esosslfiles-a.akamaihd.net/cms/2021/11/f5059a45d236626bd8ba7433c488bbe7.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": true,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Dead by Daylight",
+        "Description": null,
+        "ImageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1520/GxoUQHbrinQCjkNmBqwgr7Ij.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": true,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Forza",
+        "Description": null,
+        "ImageUrl": "https://www.gamespot.com/a/uploads/scale_landscape/1595/15950357/3942946-forzahorizon.jpeg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": true,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Sea of Thieves",
+        "Description": null,
+        "ImageUrl": "https://assetsio.reedpopcdn.com/sea-of-thieves-what-to-do-voyages-tall-tales-quests-5001-1591358974477.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": true,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Red Dead 2",
+        "Description": null,
+        "ImageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/red-dead-redemption-2-1539704658.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": true,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Overwatch 2",
+        "Description": null,
+        "ImageUrl": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/overwatch-2/3/33/OW2-Launch_Key_Art.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": true,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Rocket League",
+        "Description": "Jump back In",
+        "ImageUrl": "https://cdn1.epicgames.com/offer/9773aa1aa54f4f7b80e44bef04986cea/EGS_RocketLeague_PsyonixLLC_S3_2560x1440-1434001758900f513cab0c885121744a",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": true,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      }
+    ],
+    "HeightRequest": 100
+  },
+  {
+    "Title": "Active friends",
+    "ShowTitle": true,
+    "Tiles": [
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": true,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": true,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": true,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": true,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": true,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": true,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": true,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": true,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": true,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": true,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": true,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": true,
+        "IsGameClipTile": false,
+        "IsStandardTile": false,
+        "HeightRequest": 80
+      }
+    ],
+    "HeightRequest": 100
+  },
+  {
+    "Title": "Jump back in",
+    "ShowTitle": true,
+    "Tiles": [
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2022/06/12/ravenlok-button-1-1655076488006.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2022/02/04/epi1racer-sq-1644008681390.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://i2-prod.mirror.co.uk/gaming/article29347125.ece/ALTERNATES/s1200c/0_Truberbrook.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2023/03/14/fortnite-1678827457667.jpg?width=300&crop=1%3A1%2Csmart",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2021/12/14/minecraft-1639513933156.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202109/2216/t9XzGHGabQ2Ym0zbx4m0nEUC.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2021/09/10/redfall-1631232018892.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2021/08/19/elder-scrolls-skyrim-button-2017-1629409446732.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      }
+    ],
+    "HeightRequest": 100
+  },
+  {
+    "Title": "Recommended from Game Pass",
+    "ShowTitle": true,
+    "Tiles": [
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2021/08/19/elder-scrolls-skyrim-button-2017-1629409446732.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2022/06/12/ravenlok-button-1-1655076488006.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2022/02/04/epi1racer-sq-1644008681390.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://i2-prod.mirror.co.uk/gaming/article29347125.ece/ALTERNATES/s1200c/0_Truberbrook.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202109/2216/t9XzGHGabQ2Ym0zbx4m0nEUC.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2021/09/10/redfall-1631232018892.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2021/08/19/elder-scrolls-skyrim-button-2017-1629409446732.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      }
+    ],
+    "HeightRequest": 100
+  },
+  {
+    "Title": "Popular on Xbox",
+    "ShowTitle": true,
+    "Tiles": [
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2021/12/14/minecraft-1639513933156.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://image.api.playstation.com/vulcan/img/rnd/202109/2216/t9XzGHGabQ2Ym0zbx4m0nEUC.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2021/09/10/redfall-1631232018892.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2021/08/19/elder-scrolls-skyrim-button-2017-1629409446732.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://www.citypng.com/public/uploads/preview/-41603073993w9u8ect0zo.png",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2022/06/12/ravenlok-button-1-1655076488006.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2022/02/04/epi1racer-sq-1644008681390.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://i2-prod.mirror.co.uk/gaming/article29347125.ece/ALTERNATES/s1200c/0_Truberbrook.jpg",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      },
+      {
+        "Title": "Fall Guys",
+        "Description": "Jump back In",
+        "ImageUrl": "https://assets-prd.ignimgs.com/2023/03/14/fortnite-1678827457667.jpg?width=300&crop=1%3A1%2Csmart",
+        "IsHeaderTile": false,
+        "IsActiveFriendsTile": false,
+        "IsGameClipTile": false,
+        "IsStandardTile": true,
+        "HeightRequest": 80
+      }
+    ],
+    "HeightRequest": 100
+  }
 ]
-},
-{
-"title": "Official posts from games",
-"tiles": [
-{
-"title": "Warzone",
-"imageUrl": "https://assetsio.reedpopcdn.com/warzone-2-mw2-season-3-header-size.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp",
-"heightRequest": 80,
-"isGameClipTile": true
-},
-{
-"title": "Skyrim",
-"imageUrl": "https://esosslfiles-a.akamaihd.net/cms/2021/11/f5059a45d236626bd8ba7433c488bbe7.jpg",
-"heightRequest": 80,
-"isGameClipTile": true
-},
-{
-"title": "Dead by Daylight",
-"imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1520/GxoUQHbrinQCjkNmBqwgr7Ij.jpg",
-"isGameClipTile": true,
-"heightRequest": 80
-},
-{
-"title": "Forza",
-"imageUrl": "https://www.gamespot.com/a/uploads/scale_landscape/1595/15950357/3942946-forzahorizon.jpeg",
-"isGameClipTile": true,
-"heightRequest": 80
-},
-{
-"title": "Sea of Thieves",
-"imageUrl": "https://assetsio.reedpopcdn.com/sea-of-thieves-what-to-do-voyages-tall-tales-quests-5001-1591358974477.jpg",
-"isGameClipTile": true,
-"heightRequest": 80
-},
-{
-"title": "Red Dead Redemption 2",
-"imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/red-dead-redemption-2-1539704658.jpg",
-"isGameClipTile": true,
-"heightRequest": 80
-},
-{
-"title": "Overwatch 2",
-"imageUrl": "https://images.pushsquare.com/bb7dfb2ad39d3/overwatch-2-playstation-5-playstation-4.image.jpeg",
-"isGameClipTile": true,
-"heightRequest": 80
-}
-]
-},
-{
-"title": "Recommended games",
-"tiles": [
-{
-"title": "Horizon Forbidden West",
-"description": "Pre-order now",
-"imageUrl": "https://compass-ssl.xbox.com/assets/35/9d/359d1bea-979f-4ad3-90eb-bf90dd2e18e6.jpg?n=HFW-Page-Event_Content-Placement-0_1920x1080_02.jpg",
-"isHeaderTile": true,
-"heightRequest": 250
-},
-{
-"title": "Resident Evil Village",
-"description": "The latest installment of the Resident Evil series",
-"imageUrl": "https://cdn.vox-cdn.com/thumbor/XuBlxttB3CweCfsATft6Hc7OQnI=/0x0:1280x720/1820x1213/filters:focal(538x258:742x462):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/69070025/resident_evil_village_key_art_1.0.jpg",
-"isHeaderTile": true,
-"heightRequest": 250
-},
-{
-"title": "Assassin's Creed Valhalla",
-"description": "Explore the world of Vikings",
-"imageUrl": "https://compass-ssl.xbox.com/assets/3f/67/3f6770b9-00f2-4dbb-8ae0-00679a9111c7.jpg?n=ACV-Event-ContentPlacement-1920x1080-02_1920x1080.jpg",
-"isHeaderTile": true,
-"heightRequest": 250
-}
-]
-}
-]
-}

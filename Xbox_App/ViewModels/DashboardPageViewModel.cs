@@ -1,4 +1,5 @@
 ﻿using MauiMicroMvvm;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -56,6 +57,7 @@ namespace Xbox_App.ViewModels
             if (DashboardTiles == null) 
             {
                 DashboardTiles = _dashboardTileService.GetAllTileSets();
+                var testdd = JsonConvert.SerializeObject(DashboardTiles);
                 var test = await _requestService.GetListedData<DashboardTileSet>("https://raw.githubusercontent.com/RobertWildgoose/Xbox_App_Maui/main/Assets/dashboard.json"); 
             }
         }
