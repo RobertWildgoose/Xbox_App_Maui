@@ -36,3 +36,16 @@ In this stream, moved on to the notifications page setting up Dummy data and the
 |Expected|Currently|
 |--------|---------|
 |![StreamThree](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_27-05-2023_expected.jpg?raw=true)|![StreamThree](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_27-05-2023.png?raw=true)|
+
+
+# Stream Four (29/05/2023) - [Link 1](https://www.twitch.tv/videos/1832274038) / [Link 2](https://www.twitch.tv/videos/1832303143)
+In this stream, we resolved the small issue on the notifications page and moved onto the game info page, due to some technical issues stream broke half way through.
+- Dummy Warzone Page Content
+- New Generic APi Response  handler
+- Active Friends Content
+- Started Gradient For Achievements
+
+|Expected|Currently|
+|--------|---------|
+|![StreamFour](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_29-05-2023_expected.jpg?raw=true)|![StreamFour](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_29-05-2023_1.png?raw=true)|
+|![StreamFour](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_29-05-2023_expected_2.jpg?raw=true)|![StreamFour](https://github.com/RobertWildgoose/Xbox_App_Maui/blob/main/Assets/stream_29-05-2023_2.png?raw=true)|

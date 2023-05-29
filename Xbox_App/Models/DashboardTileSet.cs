@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Xbox_App.Models
 {
-    public class DashboardTileSet
+    public class DashboardTileSet : BaseModel
     {
         public string Title { get; set; }
         public bool ShowTitle => !string.IsNullOrEmpty(Title);

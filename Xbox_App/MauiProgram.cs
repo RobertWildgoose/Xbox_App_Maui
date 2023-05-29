@@ -26,12 +26,14 @@ public static class MauiProgram
         builder.Services.MapView<AccountPage, AccountPageViewModel>();
         builder.Services.MapView<NotificationsPage, NotificationsPageViewModel>();
         builder.Services.MapView<ScreenshotsPage, ScreenshotsPageViewModel>();
+        builder.Services.MapView<GameDetailPage, GameDetailPageViewModel>();
 
         builder.Services.AddSingleton<IDashboardTileService, DashboardTileService>();
         builder.Services.AddSingleton<INotificationService, NotificationService>();
         builder.Services.AddSingleton<IApiRequestService, ApiRequestService>();
 
         Routing.RegisterRoute("NotificationsPage", typeof(NotificationsPage));
+        Routing.RegisterRoute("GameDetailPage", typeof(GameDetailPage));
         Routing.RegisterRoute("ScreenshotsPage", typeof(ScreenshotsPage));
 #if DEBUG
         builder.Logging.AddDebug();

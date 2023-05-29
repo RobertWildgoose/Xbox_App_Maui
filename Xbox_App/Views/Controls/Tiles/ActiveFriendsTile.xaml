@@ -22,6 +22,7 @@
                         StrokeShape="RoundRectangle 40">
                         <Image 
                             Source="{Binding Image}"
+                            Aspect="AspectFill"
                             HeightRequest="80"
                             WidthRequest="80"
                             BackgroundColor="Red"/>

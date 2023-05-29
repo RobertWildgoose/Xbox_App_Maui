@@ -9,6 +9,7 @@ namespace Xbox_App.Services.Interfaces
 {
     public interface IApiRequestService
     {
-        Task<T> GetData<T>() where T : BaseModel;
+        Task<T> GetData<T>(string url) where T : BaseModel;
+        Task<List<T>> GetListedData<T>(string url) where T : BaseModel;
     }
 }

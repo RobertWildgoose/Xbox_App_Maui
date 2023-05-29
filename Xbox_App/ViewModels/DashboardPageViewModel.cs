@@ -11,7 +11,7 @@ using Xbox_App.Services.Interfaces;
 
 namespace Xbox_App.ViewModels
 {
-    public class DashboardPageViewModel : MauiMicroViewModel
+    public class DashboardPageViewModel : BaseViewModel
     {
         private readonly IDashboardTileService _dashboardTileService;
 
@@ -27,16 +27,37 @@ namespace Xbox_App.ViewModels
             set => Set(value);
         }
 
-        public DashboardPageViewModel(IDashboardTileService dashboardTileService, ViewModelContext context) : base(context)
+        public ICommand GameSelectedCommand
+        {
+            get => Get<ICommand>();
+            set => Set(value);
+        }
+
+        public DashboardPageViewModel(IDashboardTileService dashboardTileService, IApiRequestService apiRequestService, ViewModelContext context) : base(apiRequestService, context)
         {
             _dashboardTileService = dashboardTileService;
         }
 
-        public override void OnAppearing()
+        public override async void OnAppearing()
         {
             base.OnAppearing();
-            if (DashboardTiles == null){ DashboardTiles = _dashboardTileService.GetAllTileSets();}
+            await GetAllTiles();
             NotificationsCommand = new Command(NotificationsButton_Clicked);
+            GameSelectedCommand = new Command(GameSelected);
+        }
+
+        private async void GameSelected(object obj)
+        {
+            await Navigation.GoToAsync($"GameDetailPage?title={obj.ToString()}");
+        }
+
+        private async Task GetAllTiles()
+        {
+            if (DashboardTiles == null) 
+            {
+                DashboardTiles = _dashboardTileService.GetAllTileSets();
+                var test = await _requestService.GetListedData<DashboardTileSet>("https://raw.githubusercontent.com/RobertWildgoose/Xbox_App_Maui/main/Assets/dashboard.json"); 
+            }
         }
 
         private async void NotificationsButton_Clicked(object obj)

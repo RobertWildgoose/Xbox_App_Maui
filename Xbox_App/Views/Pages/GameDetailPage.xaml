@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Xbox_App.Views.Pages.GameDetailPage"
+    Title=""
+    xmlns:micro="http://schemas.mauimicromvvm.com/2022/dotnet/maui"
+    xmlns:tiles="clr-namespace:Xbox_App.Views.Controls.Tiles"
+    micro:MauiMicro.Autowire="True"
+    BackgroundColor="Black">
+    <Grid RowDefinitions="70, *">
+        <Grid Grid.Row="0" HeightRequest="70" ColumnDefinitions="50,*,50,50">
+            <Border BackgroundColor="Gray" Margin="10" HeightRequest="40" WidthRequest="40" Grid.Column="0" StrokeShape="RoundRectangle 15">
+                <ImageButton Command="{Binding NavigateBackCommand}" Source="icon_chevron_left.png" Margin="10" WidthRequest="20" HeightRequest="20"/>
+            </Border>
+        </Grid>
+        <ScrollView
+            Grid.Row="1"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            Orientation="Vertical">
+            <VerticalStackLayout Margin="16">
+                <Grid ColumnDefinitions="80,*" RowDefinitions="30,20,30" Margin="0,10,0,10">
+                    <Image Margin="5" Source="https://i2-prod.mirror.co.uk/gaming/article29689229.ece/ALTERNATES/s1200c/0_WARZONE20S3.jpg" BackgroundColor="Teal" Grid.Column="0" Grid.RowSpan="3"/>
+                    <Label Margin="5" TextColor="{StaticResource Secondary}" Text="Call of Duty: Modern Warfare 2" Grid.Column="1" Grid.Row="0" FontSize="Medium"/>
+                    <Label Margin="5,0,5,0" TextColor="{StaticResource Secondary}" Text="Activision Publishing Inc" Grid.Column="1" Grid.Row="1"/>
+                    <HorizontalStackLayout HorizontalOptions="FillAndExpand" Grid.Column="1" Grid.Row="2">
+                        <Border WidthRequest="30" StrokeShape="RoundRectangle 15,15,15,15" BackgroundColor="Red"/>
+                        <Border WidthRequest="30" StrokeShape="RoundRectangle 15,15,15,15" BackgroundColor="Red"/>
+                        <Border WidthRequest="30" StrokeShape="RoundRectangle 15,15,15,15" BackgroundColor="Red"/>
+                    </HorizontalStackLayout>
+                </Grid>
+                <Grid ColumnDefinitions="*,40" HeightRequest="40" Margin="0,10,0,10">
+                    <Border Grid.Column="0" HorizontalOptions="FillAndExpand" StrokeShape="RoundRectangle 20" BackgroundColor="DarkGreen"/>
+                    <Border Grid.Column="1" HorizontalOptions="FillAndExpand" StrokeShape="RoundRectangle 20" BackgroundColor="DarkGray"/>
+                </Grid>
+                <Label HorizontalOptions="FillAndExpand" TextColor="{StaticResource Secondary}" Text="|Game sold Separeatly, ISP fees may apply." Margin="0,10,0,10"/>
+                <Grid ColumnDefinitions="40,*" RowDefinitions="20,20,10,20" Margin="0,10,0,10">
+                    <Image 
+                        Grid.Column="0" 
+                        Grid.Row="0" 
+                        Grid.RowSpan="2" 
+                        HorizontalOptions="FillAndExpand" 
+                        Source="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/PEGI_18.svg/1200px-PEGI_18.svg.png"/>
+                    <Label 
+                        Grid.Column="1" 
+                        Grid.Row="0" 
+                        HorizontalOptions="FillAndExpand" 
+                        TextColor="{StaticResource Secondary}" 
+                        Text="PEGI 18"/>
+                    <Label 
+                        Grid.Column="1" 
+                        Grid.Row="1" 
+                        HorizontalOptions="FillAndExpand" 
+                        TextColor="{StaticResource Secondary}" 
+                        Text="Bad Language, Violence"/>
+                    <Border Grid.Column="1" Grid.Row="2" HorizontalOptions="StartAndExpand" HeightRequest="3" WidthRequest="150"/>
+                    <Label 
+                        Grid.Column="1" 
+                        Grid.Row="3" 
+                        HorizontalOptions="FillAndExpand" 
+                        TextColor="{StaticResource Secondary}" 
+                        Text="*In-Game Purchases"/>
+                </Grid>
+                <ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand" HeightRequest="200">
+                    <HorizontalStackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Grid ColumnDefinitions="100,100,100,100,100,100,100" RowDefinitions="100,100">
+                            <Image Margin="5" Source="https://i.ytimg.com/vi/cP9nLxrX0nY/maxresdefault.jpg" Grid.Column="0" Grid.Row="0" HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
+                            <Image Margin="5" Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAnCGqyG28DJO_w8Rp8KbLNLrFtaN3ubvs0A" Grid.Column="1" Grid.Row="0" HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
+                            <Image Margin="5" Source="https://codmwstore.com/wp-content/uploads/2022/07/VGD-WZ-MOF-REBIRTH-OF-THE-DEAD-001.jpg" Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
+                            <Image Margin="5" Source="https://www.gamespot.com/a/uploads/screen_kubrick/1179/11799911/3940299-screenshot2022-02-14at12.15.04pm.jpg" Grid.Column="5" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
+                            <Image Margin="5" Source="https://static.wikia.nocookie.net/callofduty/images/3/3d/Warzone_Artwork_CoDWarzone_MW.jpg/revision/latest?cb=20200331223136" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
+                            <Image Margin="5" Source="https://www.gamespot.com/a/uploads/original/1578/15789366/3642522-plunder.png" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
+                            <Image Margin="5" Source="https://www.videogameschronicle.com/files/2020/01/call-of-duty-black-ops.jpg" Grid.Column="3" Grid.Row="1" HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
+                            <Image Margin="5" Source="https://www.videogameschronicle.com/files/2020/08/EgDdcPmWAAArWQ8.jpg" Grid.Column="4" Grid.Row="1" HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
+                            <Image Margin="5" Source="https://img.gamewith.net/article/thumbnail/rectangle/23008.png" Grid.Column="5" Grid.Row="1" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" Aspect="AspectFill"/>
+                        </Grid>
+                    </HorizontalStackLayout>
+                </ScrollView>
+                <VerticalStackLayout BackgroundColor="#2b2b2a">
+                    <Label Margin="10" Text="Description" FontSize="Medium" TextColor="{StaticResource Secondary}" />
+                    <Label Margin="10" Text="Welcome to the new era of Call of Duty." FontSize="Small" TextColor="{StaticResource Secondary}" />
+                    <Label Margin="10" Text="Call of Duty: Modern Warfare II drops players into an unprecedednted global conflict that features the return of the iconic Operators of Task Force 141" FontSize="Small" TextColor="{StaticResource Secondary}" />
+                </VerticalStackLayout>
+                <Label Margin="0,10,0,0" HeightRequest="40" Text="6 Friends Play" FontSize="Medium" TextColor="{StaticResource Secondary}" VerticalTextAlignment="Center" />
+                <HorizontalStackLayout
+                    BindableLayout.ItemsSource="{Binding Friends}"
+                    HorizontalOptions="FillAndExpand">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <tiles:ActiveFriendsTile 
+                                Headline="UserFive001"
+                                Description="Last Played 2 Days Ago"
+                                Image="https://images2.alphacoders.com/191/19102.png"/>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </HorizontalStackLayout>
+                <Label Margin="0,10,0,0" HeightRequest="40" Text="Achievements" FontSize="Medium" TextColor="{StaticResource Secondary}" VerticalTextAlignment="Center" />
+                <Border StrokeShape="RoundRectangle 5" HorizontalOptions="FillAndExpand" BackgroundColor="#2b2b2a">
+                    <VerticalStackLayout>
+                        <Label Margin="5" Text="Unlockable" TextColor="{StaticResource Secondary}"/>
+                        <HorizontalStackLayout HeightRequest="50">
+                            <HorizontalStackLayout.Background>
+                                <LinearGradientBrush EndPoint="1,0">
+                                    <GradientStop Color="LightBlue" Offset="0" />
+                                    <GradientStop Color="DarkBlue" Offset="0.5" />
+                                    <GradientStop Color="LightBlue" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </HorizontalStackLayout.Background>
+                            <Grid ColumnDefinitions="50*,50*"></Grid>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

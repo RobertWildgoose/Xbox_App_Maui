@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Xbox_App.Models
 {
-    public class DashboardTile
+    public class DashboardTile : BaseModel
     {
         public DashboardTile() { }
         public string Title { get; set; }
