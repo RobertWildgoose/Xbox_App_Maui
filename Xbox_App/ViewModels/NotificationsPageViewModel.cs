@@ -25,8 +25,8 @@ namespace Xbox_App.ViewModels
             get => Get<List<NotificationTile>>();
             set => Set(value);
         }
-
-        public NotificationsPageViewModel(INotificationService notificationService, ViewModelContext context) : base(context)
+        
+        public NotificationsPageViewModel(INotificationService notificationService, IApiRequestService apiRequestService, ViewModelContext context) : base(apiRequestService, context)
         {
             _notificationService = notificationService;
         }

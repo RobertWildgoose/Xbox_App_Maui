@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xbox_App.Services.Interfaces;
 
 namespace Xbox_App.ViewModels
 {
     public class SearchPageViewModel : BaseViewModel
     {
-        public SearchPageViewModel(ViewModelContext context) : base(context)
+        public SearchPageViewModel(IApiRequestService apiRequestService, ViewModelContext context) : base(apiRequestService, context)
         {
         }
     }

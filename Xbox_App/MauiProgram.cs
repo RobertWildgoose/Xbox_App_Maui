@@ -29,7 +29,7 @@ public static class MauiProgram
 
         builder.Services.AddSingleton<IDashboardTileService, DashboardTileService>();
         builder.Services.AddSingleton<INotificationService, NotificationService>();
-
+        builder.Services.AddSingleton<IApiRequestService, ApiRequestService>();
 
         Routing.RegisterRoute("NotificationsPage", typeof(NotificationsPage));
         Routing.RegisterRoute("ScreenshotsPage", typeof(ScreenshotsPage));

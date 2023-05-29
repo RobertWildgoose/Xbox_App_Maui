@@ -1,0 +1,103 @@
+{
+"dashboardTileSets": [
+{
+"title": "",
+"tiles": [
+{
+"title": "Play Riot Games' mobile titles!",
+"description": "Receive in-game benefits by linking your Riot Games account to your Microsoft account.",
+"imageUrl": "https://images.ctfassets.net/vfkpgemp7ek3/1lqVpXAGDXmXIZT0jLgUls/f158d27e3452fa2e2b575b31533122e1/league-of-legends-wild-rift-500-million.jpeg",
+"isHeaderTile": true,
+"heightRequest": 250
+},
+{
+"title": "Fall Guys",
+"description": "Jump back in!",
+"imageUrl": "https://www.nme.com/wp-content/uploads/2022/08/Fall-Guys-x-Sonic.jpg",
+"isHeaderTile": true,
+"heightRequest": 250
+},
+{
+"title": "SpiderHeck",
+"description": "Get it with Xbox Game Pass",
+"imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202108/1607/czGau6hOvx9iQYOOkACdxqDl.png",
+"isHeaderTile": true,
+"heightRequest": 250
+}
+]
+},
+{
+"title": "Official posts from games",
+"tiles": [
+{
+"title": "Warzone",
+"imageUrl": "https://assetsio.reedpopcdn.com/warzone-2-mw2-season-3-header-size.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp",
+"heightRequest": 80,
+"isGameClipTile": true
+},
+{
+"title": "Skyrim",
+"imageUrl": "https://esosslfiles-a.akamaihd.net/cms/2021/11/f5059a45d236626bd8ba7433c488bbe7.jpg",
+"heightRequest": 80,
+"isGameClipTile": true
+},
+{
+"title": "Dead by Daylight",
+"imageUrl": "https://image.api.playstation.com/vulcan/ap/rnd/202203/1520/GxoUQHbrinQCjkNmBqwgr7Ij.jpg",
+"isGameClipTile": true,
+"heightRequest": 80
+},
+{
+"title": "Forza",
+"imageUrl": "https://www.gamespot.com/a/uploads/scale_landscape/1595/15950357/3942946-forzahorizon.jpeg",
+"isGameClipTile": true,
+"heightRequest": 80
+},
+{
+"title": "Sea of Thieves",
+"imageUrl": "https://assetsio.reedpopcdn.com/sea-of-thieves-what-to-do-voyages-tall-tales-quests-5001-1591358974477.jpg",
+"isGameClipTile": true,
+"heightRequest": 80
+},
+{
+"title": "Red Dead Redemption 2",
+"imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/red-dead-redemption-2-1539704658.jpg",
+"isGameClipTile": true,
+"heightRequest": 80
+},
+{
+"title": "Overwatch 2",
+"imageUrl": "https://images.pushsquare.com/bb7dfb2ad39d3/overwatch-2-playstation-5-playstation-4.image.jpeg",
+"isGameClipTile": true,
+"heightRequest": 80
+}
+]
+},
+{
+"title": "Recommended games",
+"tiles": [
+{
+"title": "Horizon Forbidden West",
+"description": "Pre-order now",
+"imageUrl": "https://compass-ssl.xbox.com/assets/35/9d/359d1bea-979f-4ad3-90eb-bf90dd2e18e6.jpg?n=HFW-Page-Event_Content-Placement-0_1920x1080_02.jpg",
+"isHeaderTile": true,
+"heightRequest": 250
+},
+{
+"title": "Resident Evil Village",
+"description": "The latest installment of the Resident Evil series",
+"imageUrl": "https://cdn.vox-cdn.com/thumbor/XuBlxttB3CweCfsATft6Hc7OQnI=/0x0:1280x720/1820x1213/filters:focal(538x258:742x462):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/69070025/resident_evil_village_key_art_1.0.jpg",
+"isHeaderTile": true,
+"heightRequest": 250
+},
+{
+"title": "Assassin's Creed Valhalla",
+"description": "Explore the world of Vikings",
+"imageUrl": "https://compass-ssl.xbox.com/assets/3f/67/3f6770b9-00f2-4dbb-8ae0-00679a9111c7.jpg?n=ACV-Event-ContentPlacement-1920x1080-02_1920x1080.jpg",
+"isHeaderTile": true,
+"heightRequest": 250
+}
+]
+}
+]
+}
